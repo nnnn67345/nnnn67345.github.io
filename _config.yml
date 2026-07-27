@@ -1,0 +1,72 @@
+title: English Mastery Blog
+tagline: Master English Grammar, Vocabulary & More
+description: Your Complete Guide to Mastering the English Language
+author: Language Learner
+email: your.email@example.com
+url: https://nnnn67345.github.io
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  grammar:
+    output: true
+    permalink: /grammar/:path/
+  vocabulary:
+    output: true
+    permalink: /vocabulary/:path/
+  conversation:
+    output: true
+    permalink: /conversation/:path/
+  writing:
+    output: true
+    permalink: /writing/:path/
+  stories:
+    output: true
+    permalink: /stories/:path/
+  resources:
+    output: true
+    permalink: /resources/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "grammar"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "vocabulary"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "conversation"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "writing"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "stories"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "resources"
+    values:
+      layout: post
+
+markdown: kramdown
